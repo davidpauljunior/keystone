@@ -66,6 +66,7 @@ if (keystone.get('env') == 'production'){
 	console.info('env = ' + keystone.get('env'));
     keystone.set('cloudinary config', process.env.CLOUDINARY_URL);
     keystone.set('cookie secret', process.env.COOKIE_SECRET);
+	keystone.set('mongo', process.env.MONGO_URI)
 }
 
 // Start Keystone to connect to your database and initialise the web server
