@@ -62,7 +62,7 @@ keystone.set('nav', {
 	users: 'users',
 });
 
-keystone.set('mongo', process.env.MONGO_URI || "mongodb://localhost:27017");
+keystone.set('mongo', process.env.MONGO_URI || "mongodb://localhost/my-site");
 
 if (keystone.get('env') == 'production'){
 	console.info('env = ' + keystone.get('env'));
