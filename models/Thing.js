@@ -6,7 +6,7 @@ var keystone = require('keystone');
  */
 
 var Thing = new keystone.List('Thing', {
-    label: 'hello'
+    label: 'Thing'
 });
 
 Thing.register();
